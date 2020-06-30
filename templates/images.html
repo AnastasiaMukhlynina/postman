@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Images</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 <body>
-    {% for image in images %}
+{% for image in images %}
 
-    <a href="{{ image.url }}"> <img src="{{ image.thumbnailUrl }}" class="img-fluid" alt="Responsive image"></a>
+<a href="{{ image.url }}"> <img src="{{ image.thumbnailUrl }}" class="img-fluid" alt="Responsive image"></a>
 
-    {% endfor %}
+{% endfor %}
 </body>
 </html>
